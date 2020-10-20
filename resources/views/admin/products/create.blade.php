@@ -11,7 +11,7 @@
     <div class="container">
 
         <div class="section">
-            <h2 class="title text-center">Registrar nuevo producto</h2>
+            <h2 class="title text-center">Registrar nuevos producto</h2>
             @if($errors->any())
                 <div class="alert alert-danger">
                         @foreach($errors->all() as $error)
