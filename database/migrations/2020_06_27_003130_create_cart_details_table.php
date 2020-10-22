@@ -16,7 +16,7 @@ class CreateCartDetailsTable extends Migration
         Schema::create('cart_details', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('quantity');
-            $table->integer('discount'); // % int
+            $table->integer('discount')->default(0); // % int
 
             //card_id FK
             $table->unsignedBigInteger('cart_id');
